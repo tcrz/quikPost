@@ -1,0 +1,12 @@
+.ui.mini.icon.button.addPostBtn__responsive{
+    display: none;
+}
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .ui.mini.icon.left.labeled.button.addPostBtn{
+        display: none;
+    }
+    .ui.mini.icon.button.addPostBtn__responsive{
+        display: block;
+    }
+}

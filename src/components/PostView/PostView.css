@@ -1,0 +1,15 @@
+.post-view {
+    height: 100%;
+    /* width: 90%; */
+    /* background: yellow; */
+    display: block;
+    /* margin: inherit auto */
+}
+.post-view h1 {
+    margin-bottom: .3em;
+    text-decoration: underline;
+}
+
+.content {
+    font-size: 1.2em;
+}

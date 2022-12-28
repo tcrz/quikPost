@@ -1,0 +1,77 @@
+:root {
+    --post-background-color: #f4f1f1;
+    --post-hover-color: #eae9e9;
+}
+
+.post-container {
+    background-color: var(--post-background-color);
+    position: relative;
+    /* padding: .5em */
+}
+
+.post {
+    padding: .5em;
+    min-height: 170px;
+    /* border: 1px solid black; */
+    cursor: pointer;
+    /* background-color: blue; */
+    /* background-color: green; */
+}
+
+.big-dot {
+    font-size: 1.1em;
+}
+
+.post h2, .summary {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+.post h2 {
+    border-bottom: 1px solid transparent;
+    transition: .2s ease-in;
+    /* min-width: 80%;
+    background-color: white; */
+    -webkit-line-clamp: 1;
+}
+
+
+.post .summary {
+    padding-top: .5em;
+    -webkit-line-clamp: 2;
+}
+
+.date {
+    font-size: .8em;
+}
+
+.post-container:hover {
+    background-color: var(--post-hover-color)
+}
+
+.post:hover h2 {
+    border-color: black;
+    /* background: rgb(245, 245, 245) */
+}
+
+.post-buttons .ui.icon.button{
+    font-size: .85em;
+}
+
+.post-buttons {
+    /* width: 20%; */
+    position: absolute;
+    bottom: 3%;
+    left: 1.2%;
+    /* background-color: red; */
+    /* margin: 1em */
+}
+
+.post-container:hover .post-buttons button {
+    background: var(--post-background-color);
+}
+
+

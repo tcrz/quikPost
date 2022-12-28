@@ -1,0 +1,29 @@
+header {
+    width: 100%;
+    /* border: 3px solid red; */
+    padding: .3em;
+    padding-bottom: .6em;
+    border-bottom: 1px solid black;
+}
+
+header .home-link {
+    text-decoration: underline
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    /* border: 2px solid purple */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+    /* flex-direction: row */
+}
+
+.logo_img {
+    width: 30px
+}

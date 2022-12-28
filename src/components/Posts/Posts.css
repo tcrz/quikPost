@@ -1,0 +1,21 @@
+.posts-section {
+    /* margin: 2em 0; */
+    /* border: 2px solid green; */
+    padding: 2em 2em;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-gap: 1em;
+}
+
+
+@media (min-width: 280px) and (max-width: 480px) {
+    .posts-section {
+        padding: 2em 0
+    }
+}
+
+@media (min-width: 280px) and (max-width: 768px) {
+    .posts-section {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+}
