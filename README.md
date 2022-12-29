@@ -1,6 +1,6 @@
 # QuikPost
 A post webapp that allows users to create, edit and delete posts. Posts are stored in local storage. Built with React.  
-Live Demo: https://quikpost.netlify.app
+<a href="https://quikpost.netlify.app" target="_blank">Live demo</a>
 
 ## Thought process and overview 
 ### Technology and Libraries
