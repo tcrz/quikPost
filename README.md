@@ -27,7 +27,8 @@ I decided to go with a simple minimalistic design making it easy to use and inte
 
 This application relies directly on the posts. The main data that drives this application are Post objects which will be rendered on screen as components. Since there can be many posts, our main data will be a list of Post objects.
 The structure of the post object containing all the necessary properties:  
-``` {
+``` 
+{
 id: lxWgM09jpCIkI1oHwXoCx,
 title: "Welcome To QuikPost",
 content: "This is QuikPost v1. Hope you enjoy using it half as much as I enjoyed building it."
