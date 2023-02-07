@@ -10,7 +10,7 @@ import emptyboximg from "./assets/emptybox.png";
 import { Button } from "semantic-ui-react";
 
 const welcomePost = {
-  id: nanoid(),
+  id:  "quikpost101",
   title: "⚡Welcome to QuikPost",
   content:
     "QuikPost is a post webapp that allows users to create, edit and delete posts. Posts are stored in local storage. Built with React.\nFeatures: \n- Add/Create a post\n- Edit posts\n- Delete posts\n\nPossible Updates:\n- Pagination to prevent all posts from being on a single page.\n- Import and export(download) of posts as JSON file.\n- Special styling/effect can be added to a newly added post.",
