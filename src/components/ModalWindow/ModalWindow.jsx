@@ -1,8 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { Modal } from "semantic-ui-react";
 
 export default function ModalWindow(props) {
-  const [open, setOpen] = useState(false);
   return (
     <Modal
       size={props.size}
