@@ -65,6 +65,7 @@ function App () {
 The core functionality of the application (i.e. creation, deletion, edit) and the posts data were all managed in [App.jsx](./src/App.jsx). These functions are then passed down as props to child components where they will be executed in response to events.
 
 ### Possible improvements:
-- Pagination can be implemented to prevent all posts from being on a single page.
-- Posts data can be imported or exported(downloaded) as JSON file.
-- Special styling/effect can be added to a newly added post.
+- [ ] Pagination can be implemented to prevent all posts from being on a single page.  
+- [x] Posts data can be exported(downloaded) as JSON file.  
+- [x] Posts data can be imported as post objects.
+- [ ] Special styling/effect can be added to a newly added post.
