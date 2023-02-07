@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button } from "semantic-ui-react";
+import { Button, Modal } from "semantic-ui-react";
 import EditPost from "../EditPost/EditPost";
-import DeletePost from "../DeletePost/DeletePost";
 import "./PostItem.css";
 
 export default function PostItem(props) {
@@ -28,17 +27,19 @@ export default function PostItem(props) {
         </div>
       </Link>
       <div className="post-buttons">
-        <EditPost
+        {props.id !== "quikpost101" && <EditPost
           id={props.id}
           title={props.title}
           content={props.content}
           editPost={props.editPost}
           trigger={<Button icon="edit" />}
-        />
-        <DeletePost
-          id={props.id}
-          deletePost={props.deletePost}
-          trigger={<Button icon="trash alternate" />}
+        />}
+        <Modal
+          size="tiny"
+          actions={["No", { key: "yes", content: "Yes", negative: true, onClick:()=>props.deletePost(props.id) }]}
+          trigger={ <Button icon="trash alternate" /> }
+          header="Delete Post"
+          content="Are you sure you would like to delete this post?"
         />
       </div>
     </div>
