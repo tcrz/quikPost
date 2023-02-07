@@ -1,10 +1,19 @@
 import { nanoid } from "nanoid";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Button, Form } from "semantic-ui-react";
 
 export default function PostForm(props) {
   const [title, setTitle] = useState(props.title || "");
   const [content, setContent] = useState(props.content || "");
+  const [inputNotEmpty, setInputNotEmpty] = useState(false)
+
+  useEffect(() => {
+    if(title.trim().length !== 0 && content.trim().length !== 0) {
+      setInputNotEmpty(true)
+    } else {
+      setInputNotEmpty(false)
+    }
+  }, [title, content])
 
   const handleTitleInput = (event) => {
     setTitle(event.target.value);
@@ -58,7 +67,7 @@ export default function PostForm(props) {
       <Button
         type="submit"
         color="green"
-        disabled={title && content ? false : true}
+        disabled={inputNotEmpty !== true}
       >
         {props.buttonLabel}
       </Button>
